@@ -1,0 +1,237 @@
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Main 
+:: Events
+:: Join
+:: contact
+*/
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+body {
+  margin: 0px;
+  font-family: 'Arbutus Slab', serif;
+  background: url("../img/back.png");
+}
+@media (min-width: 980px) {
+.nav_bar {
+  height: 120px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%; 
+}
+.nav_bar a { color: #333 !important;}
+.nav_back {
+  background-image: url("../img/headerback.png");
+  background-repeat: repeat-x;
+  height: 58px;
+  position:relative;
+  z-index: -1;
+}
+.logo {
+  background: url("../img/logo.png"); 
+  width: 253px;
+  height: 86px;
+  padding: 0px;
+  margin-top: -31px;
+  position: fixed; 
+}
+.logo_basic {
+  background: url("../img/logo.png") !important;
+  background-size: 137px 46px !important; 
+  width: 137px !important;
+  height: 46px !important;
+  margin: 0px !important;
+  position: absolute;
+  left: 100px;
+  top: 0px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+ul {
+  list-style-type: none;
+  margin: -7px;
+  margin-left: 20% !important;
+  margin-right: 20%;
+  padding: 0;  
+}
+.nav_basic {
+  display: block;
+  margin-left: 367px !important;
+  margin-top: -34px !important; 
+}
+li {
+  font-family: 'Short Stack', cursive;
+  font-size: 14px;
+  background: #44a65d;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  display: inline;
+  text-decoration: none;
+  cursor:pointer;
+}
+.li_basic {
+  background: none;
+  top: 0px;
+  padding-left: 37.5px;
+  padding-right: 37.5px;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+}
+#container {
+  position: relative;
+  z-index: -2;
+}
+@media (min-width: 768px) {
+.main,.about,.events,.join,.contact {
+  height: 700px;
+  position: fixed;
+  width: 100%;
+}
+.content {
+  position: absolute;
+  top: 699px;
+  background: url("../img/maze_white.png");
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  -webkit-box-shadow: 0 8px 15px 5px black;
+  -moz-box-shadow: 0 8px 15px 5px black;
+  box-shadow: 0 8px 15px 5px black;
+}
+.container-narrow {
+  margin: 0 auto;
+  max-width: 900px;
+  padding-bottom: 100px;     
+}
+}
+@media (min-width: 980px) {
+/* -----------------------------------------
+   Main
+----------------------------------------- */
+.main .back {
+  background: rgba(255,255,255,0.8) url("../img/SPEAK.png") no-repeat;
+  background-position: 48px;  
+  height: 280px;
+  width: 800px;
+  text-indent: -1000px;
+  top: 222px;
+  position: absolute;
+  z-index: 1;
+}
+
+/* -----------------------------------------
+  About 
+----------------------------------------- */
+.about {
+  background: url("../img/about.jpg");
+  background-size: 1400px 800px;
+}
+.about .members {
+ position: absolute;
+ width: 505px;
+ height: 505px;
+ margin-top: 160px; 
+}
+.about .members img {
+  border: solid rgba(255,255,255,0.6);
+  -webkit-box-shadow: 0 0px 50px 1px black;
+  -moz-box-shadow: 0 0px 50px 1px black;
+  box-shadow: 0 0px 50px 1px black;
+}
+.about .members .one {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.about .members .two {
+  position: absolute;
+  right: 0px;
+}
+.about .members .three {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.about .members .four {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.about .back {
+  background: #f6f8ee;
+  width: 385px;
+  height: 250px;
+  margin-top: 90px;
+  padding: 50px;
+  -webkit-box-shadow: 0 10px 25px -6px black;
+  -moz-box-shadow: 0 10px 25px -6px black;
+  box-shadow: 0 10px 25px -6px black;
+}
+.about h1 { text-align: center; }
+.about span { 
+  color: #969595; 
+  font-size: 20px;
+  line-height: 25px;
+}
+.about .map {
+  background: url("../img/location.jpg");
+  width: 485px;
+  height: 199px;
+  margin-top: 35px;
+  -moz-box-shadow: inset 0 0 45px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: inset 0 0 45px rgba(0, 0, 0, .4);
+  box-shadow: inset 0 0 45px rgba(0, 0, 0, .4);
+}
+/* -----------------------------------------
+  Events 
+----------------------------------------- */
+.events {
+  background: url("../img/events.jpg");
+  background-size: 1400px 800px;
+}
+.events h1 {
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+.events .back {
+  background: rgba(255,255,255,0.5);
+  height: 450px;
+  width: 78%;
+  position: relative;
+  top: 120px;
+}
+/* -----------------------------------------
+  Join 
+----------------------------------------- */
+.join {
+  background: url("../img/join.jpg");
+  background-size: 1400px 850px;
+}
+}
+/* -----------------------------------------
+  Contact  
+----------------------------------------- */
+.contact {
+  background: url("../img/gray_jean.png");		
+}
+/* -----------------------------------------
+  Footer 
+----------------------------------------- */
+@media (min-width: 768px) {
+.footer {
+  height: 420px;
+  position: relative;
+  bottom: 0px;
+  background: url("../img/wood_pat.png");
+}
+}
